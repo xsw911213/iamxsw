@@ -1,0 +1,402 @@
+.main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: auto;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0,0,0,0);
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  //border-radius: 10px;
+  background-color: rgba(0,0,0,0);
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.6);
+}
+
+.page0{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #1093c1;
+
+  .content{
+    position: relative;
+    width: 1000px;
+    height: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-52%,-50%);
+
+
+    .head_img{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin-left: 400px;
+      -webkit-clip-path: circle(100px at 100px 100px);
+    }
+
+    .info{
+      position: relative;
+      width: 100%;
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+}
+
+
+.page1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #7fb249;
+
+  .content{
+    position: relative;
+    width: 1000px;
+    height: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-52%,-50%);
+
+
+    .title{
+      position: relative;
+      width: 1000px;
+      height: 50px;
+      cursor:pointer;
+
+      .technique{
+        position: absolute;
+        width: 500px;
+        left: 0;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+      .ue{
+        position: absolute;
+        width: 500px;
+        left: 500px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+
+      .line{
+        position: absolute;
+        width: 300px;
+        height: 3px;
+        left: 100px;
+        background-color: #c1c1c1;
+        bottom: 0;
+      }
+    }
+
+
+    .technique_msg{
+      position: absolute;
+      width: 1000px;
+      padding: 50px;
+      height: 450px;
+      left: 0;
+      top: 70px;
+      overflow: auto;
+
+      p{
+        position: relative;
+        width: 100%;
+        line-height: 40px;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+
+    .ue_msg{
+      display: none;
+      position: absolute;
+      width: 1000px;
+      padding: 50px;
+      height: 450px;
+      left: 0;
+      top: 70px;
+      overflow: auto;
+
+      p{
+        position: relative;
+        width: 100%;
+        line-height: 40px;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+  }
+}
+
+
+.page2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #de8531;
+
+
+
+  .content {
+    position: relative;
+    width: 1000px;
+    height: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-52%, -50%);
+
+    .title{
+      position: relative;
+      width: 1000px;
+      height: 50px;
+      cursor:pointer;
+
+      .project_experience{
+        position: absolute;
+        width: 500px;
+        left: 0;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+      .work_experience{
+        position: absolute;
+        width: 500px;
+        left: 500px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+
+      .line{
+        position: absolute;
+        width: 300px;
+        height: 3px;
+        left: 100px;
+        background-color: #c1c1c1;
+        bottom: 0;
+      }
+    }
+
+
+    .projects{
+      position: absolute;
+      width: 1000px;
+      padding: 50px;
+      height: 450px;
+      left: 0;
+      top: 70px;
+      overflow: auto;
+
+
+    .project{
+      position: relative;
+      margin-top: 40px;
+
+      .project_name{
+        position: relative;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 25px;
+        color: #fff;
+
+        span{
+          position: absolute;
+          right: 50px;
+        }
+      }
+      .project_info{
+        position: relative;
+        width: auto;
+        margin-top: 10px;
+        line-height: 35px;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+      .project:first-child{
+        margin-top: 0;
+      }
+
+    }
+
+    .works{
+      display: none;
+      position: absolute;
+      width: 1000px;
+      padding: 50px;
+      height: 450px;
+      left: 0;
+      top: 70px;
+      overflow: auto;
+
+      .work{
+        position: relative;
+        margin-top: 40px;
+
+        .company_name{
+          position: relative;
+          width: auto;
+          height: 40px;
+          line-height: 40px;
+          font-size: 25px;
+          color: #fff;
+
+          span{
+            position: absolute;
+            right: 50px;
+          }
+        }
+        .duty{
+          position: relative;
+          width: auto;
+          margin-top: 10px;
+          line-height: 35px;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+
+      .work:first-child{
+        margin-top: 0;
+      }
+
+    }
+
+
+  }
+}
+
+
+.video{
+  position: absolute;
+  height: 0;
+  top: 0;
+
+  .click_music{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 50px;
+    cursor:pointer;
+    background-image: url("../images/music.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-animation:rotate 4s linear 0s infinite normal;
+  }
+
+
+  .music_list{
+    position: fixed;
+    top: 0;
+    right: 110px;
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    transform: translateY(-150px);
+
+    .list{
+      position: relative;
+      padding: 10px;
+      height: auto;
+      background-color: #464646;
+
+      a{
+        display: block;
+        position: relative;
+        margin-top: 1px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+      }
+
+      a:hover{
+        text-shadow: 0 0 6px #FF0000;
+        cursor:pointer
+      }
+    }
+
+    .ring{
+      position: absolute;
+      width: 30px;
+      left: 45px;
+      top: 140px;
+      -webkit-animation:rotate2 2s ease-in-out 0s infinite normal;
+      transform-origin: 50% 0;
+    }
+
+  }
+}
+
+
+.shocking{
+  position: fixed;
+  width: 100%;
+  height: 10px;
+  bottom: 0;
+  left: 0;
+
+
+  span{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    background: -webkit-linear-gradient(#fbef2d, #54d100);
+    transition:height .06s linear
+  }
+}
+
+@-webkit-keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate2{
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
